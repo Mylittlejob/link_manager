@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Click to proceed</title>
+    <title>Mylittlejob · LinkedIn Premium</title>
+    <style type="text/css">
+    	@import url('https://fonts.googleapis.com/css?family=Roboto');
+    	body {
+    		margin: 0px;
+    	}
+    	.page-wrap {
+    		display: flex;
+  			min-height: 100vh;
+  			flex-direction: column;
+    		max-width: 1100px;
+    		margin: auto;
+    		text-align: center;
+    		font-family: 'Roboto', sans-serif;
+    		color: #4E5C61;
+    	}
+    	header {
+    		margin-top: 60px;
+    		margin-bottom: 120px;
+    	}
+    	main {
+    		flex: 1;
+    	}
+    	footer {
+    		padding: 2rem;
+    		font-size: 13px;
+    	}
+    	a {
+    		text-decoration: none;
+    	}
+    	.button {
+    		border: 3px solid #A3BF21;
+    		color: #A3BF21;
+    		font-size: 22px;
+    		text-transform: uppercase;
+    		padding: 12px 32px 12px 32px;
+    		-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				border-radius: 4px;
+				-webkit-transition: all 0.2s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+        transition: all 0.2s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+        cursor: pointer;
+    	}
+    	.button:hover {
+    		background: #A3BF21;
+    		color: #ffffff;
+    	}
+    </style>
 </head>
 <body>
-    <p><a href="/redirect?link=${link}">Click the link to proceed</a></p>
+	<div class="page-wrap">
+		<header>
+			<img src="https://s3.eu-central-1.amazonaws.com/graphics.mylittlejob.com/link-manager/logo-on-white.svg">
+		</header>
+		<main class="Site-content">
+			<p>
+    		<a class="button" href="/redirect?link=${link}">Hier gehts zu LinkedIn Premium</a>
+    	</p>
+		</main>
+    <footer>
+    	Mylittlejob GmbH · 2017 · All rights reserved
+    </footer>
+  </div>
 </body>
 </html>
