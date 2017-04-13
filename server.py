@@ -74,4 +74,9 @@ def application(env, response):
 
 
 if __name__ == '__main__':
+    print("**********************************************************")
+    print("Latest link visit:")
     print(get_link(user_agent='local_script', ip_address='127.0.0.1'))
+    print("**********************************************************")
+    print("Run uwsgi server using:")
+    print("uwsgi --http :9090 --wsgi-file server.py")
